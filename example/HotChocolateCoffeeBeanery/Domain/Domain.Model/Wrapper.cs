@@ -1,6 +1,10 @@
+using CoffeeBeanery.GraphQL.Configuration;
+
 namespace Domain.Model;
 
 public class Wrapper
 {
-    public List<Customer> Customer { get; set; }
+    public string CacheKey { get; set; }
+    
+    public List<Customer>? Customer { get; set; }
 }
